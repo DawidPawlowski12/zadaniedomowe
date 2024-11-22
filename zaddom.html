@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odległości miedzy punktami</title>
+    <script>
+        function calculateDistance() {
+            do {
+                letx1 = parseFloat(prompt("Podaj  X1 pierwszego punktu:"));
+                lety1 = parseFloat(prompt(" Podaj Y1 pierwszego punktu:"));
+                letx2 =  parseFloat(prompt ("Podaj X2 kolejnego punktu:"));
+                lety2 = parseFloat (prompt("Podaj Y2 nastepnego punktu:"));
+                letdistance = Math.sqrt(Math.pow( x2 - x1, 2) + Math.pow( y2 - y1, 2));
+                letroundedDistance = Math.round(distance);
+
+                alert("Odległość między punktami wynosi: " + roundedDistance);
+            } while (confirm(" czy obliczyć nowy punkt.?"));
+        }
+    </script>
+</head>
+<body onload="calculateDistance()">
+</body>
+</html>
+<--Dawid Pawłowski-->

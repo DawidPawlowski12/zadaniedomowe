@@ -7,12 +7,12 @@
     <script>
         function calculateDistance() {
             do {
-                letx1 = parseFloat(prompt("Podaj  X1 :"));
-                lety1 = parseFloat(prompt(" Podaj Y1 :"));
-                letx2 =  parseFloat(prompt ("Podaj X2 :"));
-                lety2 = parseFloat (prompt("Podaj Y2 :"));
-                letdistance = Math.sqrt(Math.pow( x2 - x1, 2) + Math.pow( y2 - y1, 2));
-                letroundedDistance = Math.round(distance);
+                let x1 = parseFloat(prompt("Podaj  X1 :"));
+                let y1 = parseFloat(prompt(" Podaj Y1 :"));
+                let x2 = parseFloat(prompt ("Podaj X2 :"));
+                let y2 = parseFloat (prompt("Podaj Y2 :"));
+                let distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+                let roundedDistance = Math.round(distance);
                 alert(`Odległość między punktami: ${roundedDistance}`);
             } while (confirm(" czy obliczyć nowy punkt?"));
         }
